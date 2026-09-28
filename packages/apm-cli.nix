@@ -18,13 +18,13 @@
 }:
 buildPythonApplication rec {
   pname = "apm-cli";
-  version = "0.9.2";
+  version = "0.32.0";
   pyproject = true;
 
   src = fetchPypi {
     pname = "apm_cli";
     inherit version;
-    hash = "sha256-hWh8A0+0LjLRjVKqy4awQp+6/z38JDD916zHPOMBxHM=";
+    hash = "sha256-dht3QHiXXjsCjDMtjF5DpyJ7rwIqlrDwxC/JZuN/XTI=";
   };
 
   build-system = [ setuptools ];
